@@ -59,6 +59,12 @@ public class LibraryTest {
         assertEquals(1, library.getNumberOfBooks());
     }
 
+    @Test
+
+    public void getNumberOfSciFiBooks(){
+        assertEquals(300, library.bookGenre.get("SciFi"));
+    }
+
 
 }
 

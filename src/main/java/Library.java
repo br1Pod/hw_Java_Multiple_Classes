@@ -1,9 +1,12 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Library {
 
     private Integer capacity;
     private ArrayList<Book> books;
+    private HashMap<String, Integer> bookGenre;
+
 
     public Library() {
         this.capacity = 5;
@@ -30,6 +33,17 @@ public class Library {
 
     public void lendBook(Book book) {
         this.books.remove(0);
+    }
+
+    public void genreHashmap(){
+
+        HashMap<String, Integer> bookGenre = new HashMap<>();
+
+        bookGenre.put("Childrens", 400);
+        bookGenre.put("Romance", 500);
+        bookGenre.put("Poetry", 200);
+        bookGenre.put("SciFi", 300);
+
     }
 
 
